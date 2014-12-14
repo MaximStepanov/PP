@@ -31,7 +31,6 @@ int main(int argc, char * argv[])
 	{
 		printf("Average = %f\n", sum / (count * 1.0));
 	}
-	
 	MPI_Finalize();
 	return 0;
 }
