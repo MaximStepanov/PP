@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 	}
     MPI_Bcast(&n, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	
- 
     if (rank == 0) 
 	{
 		for (dest = 1; dest < size; dest++) 
