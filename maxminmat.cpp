@@ -39,7 +39,6 @@ int main(int argc, char * argv[])
 	
 	MPI_Bcast(&n, 1, MPI_INT, 0, MPI_COMM_WORLD);
 	
-
 	for (int i = rank; i < n; i += size)
 	{
 		locMin = a[i][0];
@@ -60,9 +59,7 @@ int main(int argc, char * argv[])
 		}
 		
 	}
-	
 	MPI_Reduce(&max, &result, 1, MPI_INT, MPI_MAX, 0, MPI_COMM_WORLD);
-	
 	if (rank == 0)
 	{
 		printf("Result is %d\n", result);
