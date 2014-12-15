@@ -26,7 +26,6 @@ int main()
 		printf("First area --- a[%d] = %d; b[%d] = %d\n", i, a[i], i, b[i]);
 	}
 	
-	
 	omp_set_num_threads(4);
 	
 	#pragma omp parallel for schedule(dynamic, 3)
