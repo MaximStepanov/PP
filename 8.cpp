@@ -37,6 +37,7 @@ int main()
 		}
 	printf("Guided scheduling has ended\n");
 	
+	
 	printf("Runtime scheduling beginning...\n");
 	#pragma omp parallel for schedule(dynamic, 4)
 		for (int i = 1; i < 15999; i++)
